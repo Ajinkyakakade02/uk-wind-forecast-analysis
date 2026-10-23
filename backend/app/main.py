@@ -26,6 +26,7 @@ app.add_middleware(
         "http://localhost:5173",  # Vite dev server
         "http://127.0.0.1:5173",  # IP dev server
         "http://localhost:3000",  # Alternative dev port
+        "https://uk-wind-forecast-analysis.vercel.app",  # Production Vercel frontend
     ],
     allow_credentials=True,
     allow_methods=["*"],
