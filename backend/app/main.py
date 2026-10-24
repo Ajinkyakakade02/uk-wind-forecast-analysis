@@ -36,7 +36,7 @@ app.add_middleware(
 app.include_router(router, prefix="/api")
 
 
-@app.get("/health")
+@app.api_route("/health", methods=["GET", "HEAD"])
 async def health_check():
-    """Simple health check endpoint."""
+    """Simple health check endpoint supporting GET and HEAD for uptime monitors."""
     return {"status": "ok"}
